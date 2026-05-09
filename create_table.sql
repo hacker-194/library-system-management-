@@ -59,5 +59,11 @@ CREATE TABLE return_status
             return_book_isbn VARCHAR(50),
             FOREIGN KEY (return_book_isbn) REFERENCES books(isbn)
 );
-
+--  link the file with this table throug the query
+copy branch from 'D:\archive\branch.csv' delimiter ',' header csv; --copy thw path of your file 
+copy employees from 'path of your file here' delimiter ',' header csv;
+copy members from 'path of your file here' delimiter ',' header csv;
+copy books from 'path of your file here' delimiter ',' header csv;
+copy issued_status from 'path of your file here' delimiter ',' header csv;
+copy return_status from 'path of your file here' delimiter ',' header csv;
 
