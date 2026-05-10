@@ -67,3 +67,10 @@ copy books from 'path of your file here' delimiter ',' header csv;
 copy issued_status from 'path of your file here' delimiter ',' header csv;
 copy return_status from 'path of your file here' delimiter ',' header csv;
 
+SELECT * FROM books;
+SELECT * FROM branch;
+SELECT * FROM employees;
+SELECT * FROM issued_status;
+SELECT * FROM return_status;
+SELECT * FROM members;
+
